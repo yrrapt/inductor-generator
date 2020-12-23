@@ -3,7 +3,7 @@
 A generalised inductor design and analysis toolset. It is largely a
 collection of other freely available tools.
 
-![Stackup](metal_stackup.svg)
+![Stackup](metal_stack.svg)
 
 ## Tools
 
