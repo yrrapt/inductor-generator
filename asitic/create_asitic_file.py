@@ -36,8 +36,8 @@ tek_string += "    chipx     = %d\n" % chip[0]
 tek_string += "    chipy     = %d\n" % chip[1]
 tek_string += "    fftx      = %d\n" % fft[0]
 tek_string += "    ffty      = %d\n" % fft[1]
-tek_string += "    TechFile  = sky130.tek"
-tek_string += "    TechPath  = ."
+tek_string += "    TechFile  = sky130.tek\n"
+tek_string += "    TechPath  = .\n"
 
 # determine what layers eddy currents should be calculated on
 eddy_threshold = 1000
