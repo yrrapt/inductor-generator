@@ -1,0 +1,171 @@
+{
+  "insulators" : {
+      0 : {
+              "name"        : "Bulk Substrate",       
+              "rho"         : 0.1,                    # Resistivity:  ohm-cm      - CHANGE!
+            #   "t"           : 400,                    # Thickness:  microns       - CHANGE!
+              "t"           : 100,                    # Thickness:  microns       - CHANGE!
+              "eps"         : 11.9,                   # Permitivity:  relative    - CHANGE!
+              "kappa"       : 1.5e+4
+          },
+
+      1 : {
+              "name"        : "Epi Layer",
+              "rho"         : 15,                     # Resistivity:  ohm-cm      - CHANGE!
+              "t"           : 1,                      # Thickness:  microns       - CHANGE!
+              "eps"         : 11.9,                   # Permitivity:  relative    - CHANGE!
+              "kappa"       : 1.5e+4
+          },
+
+      2 : {
+              "name"        : "Oxide Layer",
+              "rho"         : 10000000000,            # Resistivity:  ohm-cm      - CHANGE!
+              "t"           : 11.42,                 # Thickness:  microns       - CHANGE!
+              "eps"         : 4.0,                    # Permitivity:  relative    - CHANGE!
+              "kappa"       : 0.0017
+          }
+
+  },
+
+  "conductors"  : {
+      0  : {
+              "name"        : "msub",
+              "description" : "Substrate Contact Layer",
+              "insulator"   : 1,                      # The medium number the conductor sits in
+              "rsh"         : 30,                     # Sheet Resistance Milli-Ohms/Square
+              "t"           : 0.1,                    # Metal Thickness (microns)
+              "d"           : 0.5,                    # Distance from bottom of layer (microns)
+              "kappa"       : 1.5e+4
+          },
+
+      1  : {
+              "name"        : "li",
+              "description" : "Local Interconnect Layer",
+              "insulator"   : 3,                      # The medium number the conductor sits in
+              "rsh"         : 12800,                  # Sheet Resistance Milli-Ohms/Square
+              "t"           : 0.1,                    # Metal Thickness (microns)
+              "d"           : 0.0,                    # Distance from bottom of layer (microns)
+              "kappa"       : 7.812500e+05
+          },
+
+      2  : {
+              "name"        : "met1",
+              "description" : "Metal 1 Layer",
+              "insulator"   : 5,                      # The medium number the conductor sits in
+              "rsh"         : 125,                    # Sheet Resistance Milli-Ohms/Square
+              "t"           : 0.36,                   # Metal Thickness (microns)
+              "d"           : 0.0,                    # Distance from bottom of layer (microns)
+              "kappa"       : 2.222222e+07
+          },
+
+      3  : {
+              "name"        : "met2",
+              "description" : "Metal 2 Layer",
+              "insulator"   : 6,                      # The medium number the conductor sits in
+              "rsh"         : 125,                    # Sheet Resistance Milli-Ohms/Square
+              "t"           : 0.36,                   # Metal Thickness (microns)
+              "d"           : 0.0,                    # Distance from bottom of layer (microns)
+              "kappa"       : 2.222222e+07
+          },
+
+      4  : {
+              "name"        : "met3",
+              "description" : "Metal 3 Layer",
+              "insulator"   : 7,                      # The medium number the conductor sits in
+              "rsh"         : 47,                     # Sheet Resistance Milli-Ohms/Square
+              "t"           : 0.845,                  # Metal Thickness (microns)
+              "d"           : 0.0,                    # Distance from bottom of layer (microns)
+              "kappa"       : 2.517940e+07
+          },
+
+      5  : {
+              "name"        : "met4",
+              "description" : "Metal 4 Layer",
+              "insulator"   : 3,                      # The medium number the conductor sits in
+              "rsh"         : 47,                     # Sheet Resistance Milli-Ohms/Square
+              "h"           : 105,                  # Metal Thickness (microns)
+              "t"           : 0.845,                  # Metal Thickness (microns)
+              "d"           : 0.0,                    # Distance from bottom of layer (microns)
+              "kappa"       : 2.517940e+07
+          },
+
+      6  : {
+              "name"        : "met5",
+              "description" : "Metal 5 Layer",
+              "insulator"   : 4,                      # The medium number the conductor sits in
+              "rsh"         : 29,                     # Sheet Resistance Milli-Ohms/Square
+              "h"           : 106.3,                   # Metal Thickness (microns)
+              "t"           : 1.26,                   # Metal Thickness (microns)
+              "d"           : 0.0,                    # Distance from bottom of layer (microns)
+              "kappa"       : 2.784740e+07
+          }
+  },
+
+  "vias"  : {
+      0  : {
+              "name"        : "mcon",             
+              "description" : "Substrate to Local Interconnect Contact",
+              "r"           : 152,                    # resistance per via
+              "width"       : 0.15,                   # width of via
+              "space"       : 0.27,                   # minimum spacing between vias
+              "overplot1"   : 0.3,                    # minimum dist to substrate metal 
+              "overplot2"   : 0.3,                    # minimum dist to metal 1
+              "kappa"       : 1265022
+          },
+
+      1  : {
+              "name"        : "licon",             
+              "description" : "Local Interconnect to Metal 1 Contact",
+              "r"           : 15,                     # resistance per via
+              "width"       : 0.17,                   # width of via
+              "space"       : 0.17,                   # minimum spacing between vias
+              "overplot1"   : 0.4,                    # minimum dist to substrate metal 
+              "overplot2"   : 0.4,                    # minimum dist to metal 1
+              "kappa"       : 213098
+          },
+
+      2  : {
+              "name"        : "via1",             
+              "description" : "Metal 1 to Metal 2 Contact",
+              "r"           : 4.5,                    # resistance per via
+              "width"       : 0.15,                   # width of via
+              "space"       : 0.17,                   # minimum spacing between vias
+              "overplot1"   : 0.085,                  # minimum dist to substrate metal 
+              "overplot2"   : 0.085,                  # minimum dist to metal 1
+              "kappa"       : 2666666
+          },
+
+      3  : {
+              "name"        : "via2",             
+              "description" : "Metal 2 to Metal 3 Contact",
+              "r"           : 3.41,                   # resistance per via
+              "width"       : 0.20,                   # width of via
+              "space"       : 0.20,                   # minimum spacing between vias
+              "overplot1"   : 0.085,                  # minimum dist to substrate metal 
+              "overplot2"   : 0.065,                  # minimum dist to metal 1
+              "kappa"       : 3079178
+          },
+
+      4  : {
+              "name"        : "via3",             
+              "description" : "Metal 3 to Metal 4 Contact",
+              "r"           : 3.41,                   # resistance per via
+              "width"       : 0.20,                   # width of via
+              "space"       : 0.21,                   # minimum spacing between vias
+              "overplot1"   : 0.060,                  # minimum dist to substrate metal 
+              "overplot2"   : 0.065,                  # minimum dist to metal 1
+              "kappa"       : 2859237
+          },
+
+      5  : {
+              "name"        : "via4",             
+              "description" : "Metal 4 to Metal 5 Contact",
+              "r"           : 0.38,                   # resistance per via
+              "width"       : 2.00,                   # width of via
+              "space"       : 0.80,                   # minimum spacing between vias
+              "overplot1"   : 0.060,                  # minimum dist to substrate metal 
+              "overplot2"   : 0.065,                  # minimum dist to metal 1
+              "kappa"       : 2859237
+          }
+  }
+}
