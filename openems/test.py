@@ -16,8 +16,8 @@ freq     = np.arange(0e9, 100e9, 1e5)
 ref_freq = 6e9
 unit     = 1e-6
 
-ic_length = 200
-ic_width  = 200
+ic_length = 100
+ic_width  = 100
 
 sim = Simulation(freq=freq, unit=unit, reference_frequency=ref_freq)
 
@@ -57,8 +57,10 @@ Mesh(
     sim             = sim,
     metal_res       = 1 / 20,
     nonmetal_res    = 1 / 10,
-    min_lines       = 3,
-    expand_bounds   = ((0, 0), (0, 0), (1, 50)),
+    min_lines       = 5,
+    expand_bounds   = ((0, 0), (0, 0), (1, 5)),
+    # expand_bounds   = ((0, 0), (0, 0), (1, 50)),
+    # expand_bounds   = ((2, 2), (2, 2), (1, 50)),
 )
 
 
@@ -75,10 +77,10 @@ Mesh(
 # sim.view_csx()
 
 sim.run()
-sim.view_field()
+# sim.view_field()
 
-print_table(
-    data=[sim.freq / 1e9, np.abs(sim.ports[0].impedance()), sim.s_param(1, 1)],
-    col_names=["freq", "z0", "s11"],
-    prec=[2, 4, 4],
-)
+# print_table(
+#     data=[sim.freq / 1e9, np.abs(sim.ports[0].impedance()), sim.s_param(1, 1)],
+#     col_names=["freq", "z0", "s11"],
+#     prec=[2, 4, 4],
+# )
