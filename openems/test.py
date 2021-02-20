@@ -16,8 +16,8 @@ freq     = np.arange(0e9, 100e9, 1e5)
 ref_freq = 6e9
 unit     = 1e-6
 
-ic_length = 100
-ic_width  = 100
+ic_length = 400
+ic_width  = 400
 
 sim = Simulation(freq=freq, unit=unit, reference_frequency=ref_freq)
 
@@ -41,13 +41,13 @@ ic = IC(
 inductor = Inductor(
     ic          = ic,
     position    = Coordinate2(0, 0),
-    width       = 2.0,
-    spacing     = 2.0,
+    width       = 18.3,
+    spacing     = 1.6,
     turns       = 2,
-    radius      = 20,
+    radius      = 75,
     # sides       = 8,
     sides       = 4,
-    feedlength  = 4,
+    feedlength  = 10,
     layer       = 'met5',
     resolution  = 0.001
 )
@@ -58,7 +58,7 @@ Mesh(
     metal_res       = 1 / 20,
     nonmetal_res    = 1 / 10,
     min_lines       = 5,
-    expand_bounds   = ((0, 0), (0, 0), (1, 5)),
+    expand_bounds   = ((0, 0), (0, 0), (1, 50)),
     # expand_bounds   = ((0, 0), (0, 0), (1, 50)),
     # expand_bounds   = ((2, 2), (2, 2), (1, 50)),
 )
