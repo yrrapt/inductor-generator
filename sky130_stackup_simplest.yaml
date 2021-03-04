@@ -43,6 +43,7 @@
               "description" : "Local Interconnect Layer",
               "insulator"   : 3,                      # The medium number the conductor sits in
               "rsh"         : 12800,                  # Sheet Resistance Milli-Ohms/Square
+              "h"           : 101.9361,                   # Metal Thickness (microns)
               "t"           : 0.1,                    # Metal Thickness (microns)
               "d"           : 0.0,                    # Distance from bottom of layer (microns)
               "kappa"       : 7.812500e+05
