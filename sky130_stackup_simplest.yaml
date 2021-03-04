@@ -4,7 +4,7 @@
               "name"        : "Bulk Substrate",       
               "rho"         : 0.1,                    # Resistivity:  ohm-cm      - CHANGE!
             #   "t"           : 400,                    # Thickness:  microns       - CHANGE!
-              "t"           : 100,                    # Thickness:  microns       - CHANGE!
+              "t"           : 50,                    # Thickness:  microns       - CHANGE!
               "eps"         : 11.9,                   # Permitivity:  relative    - CHANGE!
               "kappa"       : 1.5e+4
           },
@@ -43,7 +43,7 @@
               "description" : "Local Interconnect Layer",
               "insulator"   : 3,                      # The medium number the conductor sits in
               "rsh"         : 12800,                  # Sheet Resistance Milli-Ohms/Square
-              "h"           : 101.9361,                   # Metal Thickness (microns)
+              "h"           : 51.9361,                   # Metal Thickness (microns)
               "t"           : 0.1,                    # Metal Thickness (microns)
               "d"           : 0.0,                    # Distance from bottom of layer (microns)
               "kappa"       : 7.812500e+05
@@ -84,7 +84,7 @@
               "description" : "Metal 4 Layer",
               "insulator"   : 3,                      # The medium number the conductor sits in
               "rsh"         : 47,                     # Sheet Resistance Milli-Ohms/Square
-              "h"           : 105,                  # Metal Thickness (microns)
+              "h"           : 55,                  # Metal Thickness (microns)
               "t"           : 0.845,                  # Metal Thickness (microns)
               "d"           : 0.0,                    # Distance from bottom of layer (microns)
               "kappa"       : 2.517940e+07
@@ -95,7 +95,7 @@
               "description" : "Metal 5 Layer",
               "insulator"   : 4,                      # The medium number the conductor sits in
               "rsh"         : 29,                     # Sheet Resistance Milli-Ohms/Square
-              "h"           : 106.3,                   # Metal Thickness (microns)
+              "h"           : 56.3,                   # Metal Thickness (microns)
               "t"           : 1.26,                   # Metal Thickness (microns)
               "d"           : 0.0,                    # Distance from bottom of layer (microns)
               "kappa"       : 2.784740e+07

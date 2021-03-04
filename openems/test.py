@@ -47,17 +47,18 @@ inductor = Inductor(
     radius      = 65,
     # sides       = 8,
     sides       = 4,
-    feedlength  = 10,
+    feedlength  = 5,
     layer       = 'met5',
-    resolution  = 0.001
+    resolution  = 0.005,
+    ports       = 2
 )
 
 # create the mesh
 Mesh(
     sim             = sim,
-    metal_res       = 1 / 7,
-    nonmetal_res    = 1 / 5,
-    min_lines       = 5,
+    metal_res       = 1 / 2,
+    nonmetal_res    = 1 / 2,
+    min_lines       = 2,
     # expand_bounds   = ((0, 0), (0, 0), (1, 50)),
     # expand_bounds   = ((0, 0), (0, 0), (1, 50)),
     # expand_bounds   = ((0, 0), (0, 0), (1, 50)),
