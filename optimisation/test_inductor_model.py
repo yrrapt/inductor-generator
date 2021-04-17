@@ -2,11 +2,11 @@ import inductor_model
 import numpy as np
 
 
-values = {  'n'     :   2.4,
-            'w'     :   49e-6,
+values = {  'n'     :   2,
+            'w'     :   18e-6,
             's'     :   1.6e-6,
-            'd_out' :   200e-6,
-            'd_avg' :   139e-6,
+            'd_out' :   150e-6,
+            'd_avg' :   130e-6,
          }
 
 inductor_model_obj = inductor_model.InductorModel()

@@ -9,12 +9,18 @@ class InductorModel():
         '''
 
         # define the constants
-        self.beta        = 1.66e-3
-        self.alpha_1     = -1.330
-        self.alpha_2     = -0.125
-        self.alpha_3     = 2.500
-        self.alpha_4     = 1.830
-        self.alpha_5     = -0.022
+        self.beta        = 1.62e-3
+        self.alpha_1     = -1.210
+        self.alpha_2     = -0.147
+        self.alpha_3     = 2.400
+        self.alpha_4     = 1.780
+        self.alpha_5     = -0.030
+        # self.beta        = 1.66e-3
+        # self.alpha_1     = -1.330
+        # self.alpha_2     = -0.125
+        # self.alpha_3     = 2.500
+        # self.alpha_4     = 1.830
+        # self.alpha_5     = -0.022
         self.sigma       = 2.784740e+07
         self.mu          = 4e-7*np.pi
         self.epsilon     = 4*8.85e-12
